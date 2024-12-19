@@ -1,47 +1,37 @@
-/*8.
+/*8.Crear seis funciones, (sumar, restar, multiplicar, dividir, módulo, potencia), debe recibir 2 números e imprimir el resultado así: Ej entrada: 8, 4 Ej salida: 8 + 4 = 12
  */
 function suma(a, b) {
-  return a + b;
+  let resultado = a + b;
+  console.log(`${a} + ${b} = ${resultado} `);
 }
+suma(5, 5);
+
 function resta(a, b) {
-  return a - b;
+  let resultado1 = a - b;
+  console.log(`${a} - ${b} = ${resultado1}`);
 }
+resta(5, 5);
+
 function multiplicacion(a, b) {
-  return a * b;
+  let resultado2 = a * b;
+  console.log(`${a} * ${b} = ${resultado2}`);
 }
+multiplicacion(5, 5);
+
 function division(a, b) {
-  return a / b;
+  let resultado3 = a / b;
+  console.log(`${a} / ${b} = ${resultado3}`);
 }
+division(5, 5);
+
 function modulo(a, b) {
-  return a % b;
+  let resultado4 = a % b;
+  console.log(`${a} % ${b} = ${resultado4}`);
 }
+modulo(5, 5);
+
 function potencia(a, b) {
-  return a ** b;
+  let resultado5 = a ** b;
+  console.log(`${a} ^ ${b} = ${resultado5}`);
 }
-function ope(operacion, num1, num2) {
-  if (operacion === "suma") {
-    const res = suma(num1, num2);
-    console.log(suma(num1 + " + " + num2 + " = " + res));
-  }
-  if (operacion === "resta") {
-    console.log(resta(num1, num2));
-  }
-  if (operacion === "multiplicacion") {
-    console.log(multiplicacion(num1, num2));
-  }
-  if (operacion === "division") {
-    console.log(division(num1, num2));
-  }
-  if (operacion === "modulo") {
-    console.log(modulo(num1, num2));
-  }
-  if (operacion === "potencia") {
-    console.log(potencia(num1, num2));
-  }
-}
-ope("suma", 5, 5);
-ope("resta", 5, 5);
-ope("multiplicacion", 5, 5);
-ope("division", 5, 5);
-ope("modulo", 5, 5);
-ope("potencia", 5, 5);
+potencia(5, 5);
